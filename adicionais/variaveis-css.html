@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variaveis no CSS</title>
+    <style> 
+    /* declarando variaveis usando seletor pseudo-classe :root */
+    :root { 
+        --cor: rgb(28, 5, 148) ;
+        --bordaArredondada: 4px 8px 12px;
+        --corFundo: linear-gradient(black, red);
+    }
+   h1{ 
+    color: var(--cor);
+    background: var(--corFundo);
+    border-radius: var(--bordaArredondada);
+}
+   h2{ border: solid var(--cor);}
+   p { text-shadow: var(--cor) 2px 2px 5px;}
+    </style>
+</head>
+<body>
+    <h1> Usando variaveis no CSS</h1>
+    <hr>
+    <h2>Front-End</h2> 
+    <p> como exemplificar o site</p>
+
+    <h2> back-end</h2>
+    
+</body>
+</html>
