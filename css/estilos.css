@@ -135,8 +135,33 @@ a {
     animation-duration: 3s;
     /* animation interation infiniti e 
  abination-direction para animação. */
- /* função clamp () usadapara definir um valor que se ajusta dinamicamente entre em valor minimo, IDEAL/flexivel/variave e MAXIMO */
+    /* função clamp () usadapara definir um valor que se ajusta dinamicamente entre em valor minimo, IDEAL/flexivel/variave e MAXIMO */
 
 }
-.destaque h2 { font-size: clamp( 3rem, 10vm, 7rem);}
-   
+
+.destaque h2 {
+    font-size: clamp(3rem, 10vw, 7rem);
+}
+
+.article h2 {
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-family: Rela;
+    color: var(--cor-titulo);
+}
+
+article p {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+article address {
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.front-end,
+.historia,
+.localizacao {
+    text-align: center;
+}
