@@ -111,8 +111,32 @@ a {
     color: var(--cor-clara);
     text-align: center;
     display: flex;
-    -ms-flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
+}
 
+/* etapa 1: regra de animação */
+@keyframes animadestaque {
+    from {
+        opacity: 0;
+        transform: translateY(-500px) scale(0.5) rotateX(360deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY() scale();
+    }
+}
+
+/* etapa 2: aplicar a animação */
+.destaque h2,
+.destaque p {
+    animation-name: animadestaque;
+    animation-duration: 3s;
+    /* animation interation infiniti e 
+ abination-direction para animação. */
+ /* função clamp () usadapara definir um valor que se ajusta dinamicamente entre em valor minimo, IDEAL/flexivel/variave e MAXIMO */
 
 }
+.destaque h2 { font-size: clamp( 3rem, 10vm, 7rem);}
+   
