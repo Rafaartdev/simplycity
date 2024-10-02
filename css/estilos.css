@@ -269,3 +269,9 @@ text-align: right;}
 /* selecionando linhas alternadas. Podemos usar even(par) ou odd impar */
 tr:nth-child(even){ background-color:rgb(186, 181, 181);}
 
+.galeria img { 
+     border-radius: 50%;
+     object-fit: cover;
+     box-shadow: #333 #4d4d4d;
+     
+}
