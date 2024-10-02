@@ -271,7 +271,11 @@ tr:nth-child(even){ background-color:rgb(186, 181, 181);}
 
 .galeria img { 
      border-radius: 50%;
-     object-fit: cover;
-     box-shadow: #333 #4d4d4d;
-     
+     box-shadow: var(--cor-texto) 0 0 18px;
+     transform: scale(0.8) rotate(-30deg);     
+     transition: 0.5;      
+}
+.galeria img:hover { 
+    transform: scale(1);
+
 }
