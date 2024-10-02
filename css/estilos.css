@@ -61,13 +61,25 @@ a {
 }
 
 .topo {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
     position: sticky;
     top: 0;
     background-color: var(--cor-clara);
 }
+/* cabeçalho/topo "cheio", ou seja , pegando 100% da tela e fixado. */
+.topo .limitador {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+/*   */
+
+/* classe que será aplicada em algumas partes do site visando criar limites de tamanho  */
+.limitador {
+    width: 95vw;
+    max-width: 1000px;
+    margin: auto;
+    /* background-color: yellow; */
+    }
 
 .titulo-menu a {
     color: var(--cor-escura);
@@ -146,7 +158,7 @@ a {
     font-size: clamp(3rem, 10vw, 7rem);
 }
 
-.article h2 {
+article h2 {
     padding: 1rem;
     font-size: 1.4rem;
     font-family: Rela;
@@ -178,22 +190,22 @@ article address {
 
 .historia iframe {
     width: 100%;
-
+  width: 100%;
+  margin-top: 2rem;
+  max-width: 700px;
 }
 
 .historia h2 {
     color: var(--cor-clara);
-    width: 100%;
-    margin: top 2rem;
+   
+   
     text-shadow: var(--cor-escura)2px, 2px, 5px;
-    margin-bottom: 2re m;
-    max-width: 700px;
+    
 }
 
 .localizacao iframe {
     width: 100%;
-    max-width: 700px;
-
+    
 }
 
 .rodape {
@@ -257,9 +269,3 @@ text-align: right;}
 /* selecionando linhas alternadas. Podemos usar even(par) ou odd impar */
 tr:nth-child(even){ background-color:rgb(186, 181, 181);}
 
-.limitador {
-width: 95vw;
-max-width: 1000px;
-margin: auto;
-background-color: yellow;
-}
