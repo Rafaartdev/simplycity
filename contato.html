@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Simplicity</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="topo">
+        <div class="limitador">
+            <h1 class="titulo"><a href="index.html">simplicity</a></h1>
+            <nav class="menu">
+                <h2 class="titulo-menu"><a href="">Menu &equiv;</a></h2>
+                <ul class="links-menu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="produtos.html">produtos</a></li>
+                    <li><a href="servicos.html">serviços</a></li>
+                    <li><a href="contato.html">contato</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <article class="conteudo-geral limitador">
+            <h2>Contato</h2>
+            <p>
+                Entre em contato conosco para discutir seus projetos e necessidades. Preencha o formulário abaixo e
+                nossa equipe retornará em breve. Estamos ansiosos para trabalhar com você!
+            </p>
+
+
+            <p>Atenção: os campos <b>Nome</b>, <b>E-mail</b> e <b>Mensagem</b> são <u>obrigatórios</u>.</p>
+            <!-- GET: Envia dados via URL, ficam expostos na barra de endereço -->
+            <!-- POST: envia dados via corpo do formulario, não ficam expostos. É o recomendavel para formulários de cadastro e contatos em gearal. -->
+
+            <form action="" method="post">
+                <!-- texto ao lado do campo -->
+                <!-- For: conecta o label atravez do imput -->
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="tex0t" name="nome" id="nome" placeholder="digite o nome completo">
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="nasvimento">Data de nascimento</label>
+                    <input type="date" nome="nascimento" id="nascimento">
+
+                </div>
+
+
+            </form>
+
+
+
+
+        </article>
+    </main>
+    <footer class="rodape"></footer>
+
+
+    <p>site dsenvolvido para fins educacionais</p>
+    </footer>
+</body>
+
+</html>
