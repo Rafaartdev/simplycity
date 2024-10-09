@@ -65,14 +65,16 @@ a {
     top: 0;
     background-color: var(--cor-clara);
     z-index: 10;
-;
+    ;
 }
+
 /* cabeçalho/topo "cheio", ou seja , pegando 100% da tela e fixado. */
 .topo .limitador {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
+
 /*   */
 
 /* classe que será aplicada em algumas partes do site visando criar limites de tamanho  */
@@ -81,7 +83,7 @@ a {
     max-width: 1000px;
     margin: auto;
     /* background-color: yellow; */
-    }
+}
 
 .titulo-menu a {
     color: var(--cor-escura);
@@ -192,22 +194,22 @@ article address {
 
 .historia iframe {
     width: 100%;
-  width: 100%;
-  margin-top: 2rem;
-  max-width: 700px;
+    width: 100%;
+    margin-top: 2rem;
+    max-width: 700px;
 }
 
 .historia h2 {
     color: var(--cor-clara);
-   
-   
+
+
     text-shadow: var(--cor-escura)2px, 2px, 5px;
-    
+
 }
 
 .localizacao iframe {
     width: 100%;
-    
+
 }
 
 .rodape {
@@ -260,24 +262,62 @@ th {
     color: var(--cor-clara);
     padding: 0, 5rem;
 }
+
 td {
-    padding: 0,4rem;
+    padding: 0, 4rem;
 }
+
 /* estamos selecionando os segundos <td> */
-td:nth-child(2){ text-align: center;}
-
-td:last-child, th:last-child {
-text-align: right;}
-/* selecionando linhas alternadas. Podemos usar even(par) ou odd impar */
-tr:nth-child(even){ background-color:rgb(186, 181, 181);}
-
-.galeria img { 
-     border-radius: 50%;
-     box-shadow: var(--cor-texto) 0 0 18px;
-     transform: scale(0.8) rotate(-30deg);     
-     transition: 0.5;      
+td:nth-child(2) {
+    text-align: center;
 }
-.galeria img:hover { 
-    transform: scale(1);
 
+td:last-child,
+th:last-child {
+    text-align: right;
+}
+
+/* selecionando linhas alternadas. Podemos usar even(par) ou odd impar */
+tr:nth-child(even) {
+    background-color: rgb(186, 181, 181);
+}
+
+.galeria img {
+    border-radius: 50%;
+    box-shadow: var(--cor-texto) 0 0 18px;
+    transform: scale(0.8) rotate(-30deg);
+    transition: 0.5;
+}
+
+.galeria img:hover {
+    transform: scale(1);
+}
+
+@media screen and (min-width: 600px) {
+    .titulo-menu {
+        display: none;
+    }
+
+    .links-menu {
+        display: flex;
+    }
+/* ajustamos otamanho do menu (nav) fazendo-o "esticar", aumentando o espaçamentodentro dele */
+    .links-menu li {
+        width: 100%;
+    }
+
+    .menu {
+       
+        width: 60%;
+    }
+    /* forçamos cada item (li) da lista a ter largura total e, com isso redistribuir e ocupar todos os espaços dentro do menu (nav) */
+    .links-menu li {width: 100%;}
+}
+@media screen and (min-width: 1000px) {
+    /* Aumentamos o tamanho da base front-size. Desta forma, mudam de tamanho os textos do site (em especial os que usam REM), mudam de tamanho proporcionalmente. */
+    html { font-size: 20px;}
+    /* Aumentamos a altura da div.limitadora contida no topo ( header) */
+    .topo{
+        height: 100px;
+    }
 }
