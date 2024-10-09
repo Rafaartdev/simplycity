@@ -293,6 +293,55 @@ tr:nth-child(even) {
     transform: scale(1);
 }
 
+/* Regras para o formulário de contato */
+form {
+
+    max-width: 500px;
+    margin: auto;
+
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--cor-texto);
+
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: none;
+    padding: 6px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+textarea {
+    height: auto;
+}
+button {
+ border: none;
+ background-color: var(--cor-escura);
+ color: var(--cor-clara);
+ padding: 10px;
+ font-weight: bold;
+ border-radius: 4px;
+
+}
+
+button:hover, button:focus {
+background-color: darkblue;
+cursor: pointer;
+transform: scale(1.05);
+}
+
+
 @media screen and (min-width: 600px) {
     .titulo-menu {
         display: none;
@@ -301,23 +350,32 @@ tr:nth-child(even) {
     .links-menu {
         display: flex;
     }
-/* ajustamos otamanho do menu (nav) fazendo-o "esticar", aumentando o espaçamentodentro dele */
+
+    /* ajustamos otamanho do menu (nav) fazendo-o "esticar", aumentando o espaçamentodentro dele */
     .links-menu li {
         width: 100%;
     }
 
     .menu {
-       
+
         width: 60%;
     }
+
     /* forçamos cada item (li) da lista a ter largura total e, com isso redistribuir e ocupar todos os espaços dentro do menu (nav) */
-    .links-menu li {width: 100%;}
+    .links-menu li {
+        width: 100%;
+    }
 }
+
 @media screen and (min-width: 1000px) {
+
     /* Aumentamos o tamanho da base front-size. Desta forma, mudam de tamanho os textos do site (em especial os que usam REM), mudam de tamanho proporcionalmente. */
-    html { font-size: 20px;}
+    html {
+        font-size: 20px;
+    }
+
     /* Aumentamos a altura da div.limitadora contida no topo ( header) */
-    .topo{
+    .topo {
         height: 100px;
     }
 }
