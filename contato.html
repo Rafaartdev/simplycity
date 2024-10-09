@@ -46,15 +46,42 @@
                     <label for="nome">Nome:</label>
                     <input type="tex0t" name="nome" id="nome" placeholder="digite o nome completo">
                 </div>
+
                 <div>
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
+                    <input required type="email" name="email" id="email">
                 </div>
+
                 <div>
                     <label for="nasvimento">Data de nascimento</label>
-                    <input type="date" nome="nascimento" id="nascimento">
+                    <input required type="date" nome="nascimento" id="nascimento">
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input required type="tel" name="telefone">
+                </div>
+
+
+                <div>
+
+                    <label for="assunto">assunto:</label>
+                    <select name="assunto" id="">
+                        <option value=""></option>
+                        <option>Dûvidas</option>
+                        <option>Elogios</option>
+                        <option>Reclamações</option>
+                        <option>Outros</option>
+                    </select>
 
                 </div>
+
+                <div>
+                    <label for="mensagens">Mensagem</label>
+                    <textarea required name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+
+                <button type="submit">Enviar Dados</button>
 
 
             </form>
