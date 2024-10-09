@@ -64,6 +64,8 @@ a {
     position: sticky;
     top: 0;
     background-color: var(--cor-clara);
+    z-index: 10;
+;
 }
 /* cabeçalho/topo "cheio", ou seja , pegando 100% da tela e fixado. */
 .topo .limitador {
