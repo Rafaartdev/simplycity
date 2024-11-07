@@ -340,7 +340,19 @@ background-color: darkblue;
 cursor: pointer;
 transform: scale(1.05);
 }
+#area-do-cep {
+    display: flex;
+    justify-content: space-between;
+}
 
+#cep { width: 50%; }
+
+#buscar { 
+    width: 49%;
+    padding: 12px;
+}
+
+.campos-restantes { display: none; }
 
 @media screen and (min-width: 600px) {
     .titulo-menu {
